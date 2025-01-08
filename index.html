@@ -3,124 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio-José-</title>
+    <meta name="description" content="Soy José, Administrador de Sistemas Informáticos en Red con experiencia en Linux, bases de datos y desarrollo web. Conoce mis proyectos y habilidades.">
+    <meta name="keywords" content="José, Administrador de Sistemas, Linux, bases de datos, PostgreSQL, MySQL, desarrollo web, HTML5, CSS3, Git, programación, automatización">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="José Lahoucine Ait Aliouabdellah">
+    <meta property="og:title" content="Portafolio de José - Administrador de Sistemas y Desarrollo Web">
+    <meta property="og:description" content="Soy José, Administrador de Sistemas con experiencia en Linux, bases de datos y desarrollo web.">
+    <meta property="og:image" content="Fotos/profile.jpg">
+    <meta property="og:url" content="https://joseasir.github.io/portfolio/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portafolio de José - Administrador de Sistemas y Desarrollo Web">
+    <meta name="twitter:description" content="Soy José, Administrador de Sistemas con experiencia en Linux, bases de datos y desarrollo web.">
+    <meta name="twitter:image" content="Fotos/profile.jpg">
+    <title>Portafolio de José - Administrador de Sistemas y Desarrollo Web</title>
     <link rel="icon" href="Fotos/favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://joseasir.github.io/portfolio/">
 </head>
 <body>
 
-<header role="banner">
-    <nav class="fixed-menu" role="navigation">
+<header>
+    <nav class="fixed-menu">
         <ul>
-            <li><a href="#inicio"><img src="Fotos/logo.svg" alt="Logotipo" class="logo" loading="lazy"></a></li>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#inicio"><img src="Fotos/logo.svg" alt="Logotipo de José, Administrador de Sistemas y Desarrollador Web" title="Portafolio de José" class="logo" loading="lazy"></a></li>
+            <li><a href="#sobre-mi" title="Sobre mí">Sobre mí</a></li>
+            <li><a href="#proyectos" title="Mis proyectos">Proyectos</a></li>
+            <li><a href="#habilidades" title="Mis habilidades">Habilidades</a></li>
+            <li><a href="#contacto" title="Contacto">Contacto</a></li>
         </ul>
     </nav>
 </header>
 
-<main role="main">
-    <section id="inicio" class="intro" aria-labelledby="inicio-title">
-        <h1 id="inicio-title">Hola, soy José</h1>
-        <p>Administrador de Sistemas Informáticos en Red</p>
-        <img src="Fotos/profile.jpg" alt="Foto de José" loading="lazy">
-        <div class="social-links">
-            <a href="https://github.com/joseAsir" class="btn">GitHub</a>
-            <a href="https://www.linkedin.com/in/jos%C3%A9-lahoucine-ait-aliouabdellah-bravo-2a68a4316" class="btn">LinkedIn</a>
+<section id="inicio" class="intro">
+    <h1>Hola, soy José</h1>
+    <p>Administrador de Sistemas Informáticos en Red</p>
+    <img src="Fotos/profile.jpg" alt="Foto de José" title="Foto profesional de José" loading="lazy">
+    <div class="social-links">
+        <a href="https://github.com/joseAsir" class="btn" title="GitHub de José">GitHub</a>
+        <a href="https://www.linkedin.com/in/jos%C3%A9-lahoucine-ait-aliouabdellah-bravo-2a68a4316" class="btn" title="Perfil de LinkedIn de José">LinkedIn</a>
+    </div>
+</section>
+
+<section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Soy José, Administrador de Sistemas Informáticos en Red, con una sólida experiencia en Linux, bases de datos (PostgreSQL, MySQL) y desarrollo web (HTML5, CSS3). Utilizo herramientas como Git para la gestión de versiones y la optimización de procesos. Mi especialización se centra en la administración de infraestructuras, la automatización y la seguridad tecnológica, garantizando redes robustas y sistemas eficientes.</p>
+</section>
+
+<section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="projects-grid">
+        <div class="project">
+            <img src="Fotos/proyecto1.png" alt="Proyecto de Seguridad y Alta Disponibilidad" title="Seguridad y Alta Disponibilidad" loading="lazy">
+            <h3>Seguridad y Alta Disponibilidad</h3>
+            <p>Diseño de soluciones para proteger sistemas y asegurar su funcionamiento continuo, priorizando la prevención de fallos y la resiliencia ante amenazas.</p>
+            <a href="https://github.com/joseAsir/SAD" title="Ver proyecto de Seguridad y Alta Disponibilidad">Ver más</a>
         </div>
-    </section>
-
-    <section id="sobre-mi" role="region" aria-labelledby="sobre-mi-title">
-        <h2 id="sobre-mi-title">Sobre mí</h2>
-        <p>Soy José, Administrador de Sistemas Informáticos en Red, con una sólida experiencia en Linux, bases de datos (PostgreSQL, MySQL) y desarrollo web (HTML5, CSS3). Utilizo herramientas como Git para la gestión de versiones y la optimización de procesos. Mi especialización se centra en la administración de infraestructuras, la automatización y la seguridad tecnológica, garantizando redes robustas y sistemas eficientes.</p>
-    </section>
-
-    <section id="proyectos" role="region" aria-labelledby="proyectos-title">
-        <h2 id="proyectos-title">Proyectos</h2>
-        <div class="projects-grid">
-            <div class="project" role="article">
-                <img src="Fotos/proyecto1.png" alt="Seguridad y Alta Disponibilidad" loading="lazy">
-                <h3>Seguridad y Alta Disponibilidad</h3>
-                <p>Diseño de soluciones para proteger sistemas y asegurar su funcionamiento continuo, priorizando la prevención de fallos y la resiliencia ante amenazas.</p>
-                <a href="https://github.com/joseAsir/SAD">Ver más</a>
-            </div>
-            <div class="project" role="article">
-                <img src="Fotos/proyecto3.png" alt="Python" loading="lazy">
-                <h3>Python</h3>
-                <p>Desarrollo de aplicaciones y automatización de procesos utilizando Python, enfocado en eficiencia, legibilidad y la integración con diversas librerías y tecnologías.</p>
-                <a href="https://github.com/joseAsir/Curso-Python">Ver más</a>
-            </div>
-            <div class="project" role="article">
-                <img src="Fotos/proyecto2.png" alt="Implantación de Aplicaciones Web" loading="lazy">
-                <h3>Implantación de Aplicaciones Web</h3>
-                <p>Desarrollo e implementación de aplicaciones web escalables y seguras, optimizando su rendimiento y garantizando una integración fluida con bases de datos y servicios externos.</p>
-                <a href="https://github.com/joseAsir/IAW">Ver más</a>
-            </div>
+        <div class="project">
+            <img src="Fotos/proyecto3.png" alt="Proyecto de Python" title="Proyecto de Python" loading="lazy">
+            <h3>Python</h3>
+            <p>Desarrollo de aplicaciones y automatización de procesos utilizando Python, enfocado en eficiencia, legibilidad y la integración con diversas librerías y tecnologías.</p>
+            <a href="https://github.com/joseAsir/Curso-Python" title="Ver proyecto de Python">Ver más</a>
         </div>
-    </section>
+        <div class="project">
+            <img src="Fotos/proyecto2.png" alt="Proyecto de Implantación de Aplicaciones Web" title="Implantación de Aplicaciones Web" loading="lazy">
+            <h3>Implantación de Aplicaciones Web</h3>
+            <p>Desarrollo e implementación de aplicaciones web escalables y seguras, optimizando su rendimiento y garantizando una integración fluida con bases de datos y servicios externos.</p>
+            <a href="https://github.com/joseAsir/IAW" title="Ver proyecto de Aplicaciones Web">Ver más</a>
+        </div>
+    </div>
+</section>
 
-    <section id="habilidades" role="region" aria-labelledby="habilidades-title">
-        <h2 id="habilidades-title">Habilidades</h2>
-        <div class="skills">
-            <div class="skill" role="region" aria-labelledby="sistemas-title">
-                <img src="Fotos/network.png" alt="Icono de sistemas y redes" class="icon" loading="lazy">
-                <h3 id="sistemas-title">Sistemas y Redes</h3>
-                <p>Experto en servidores Linux y configuración de redes.</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 90%;"></div>
-                </div>
-            </div>
-            <div class="skill" role="region" aria-labelledby="bd-title">
-                <img src="Fotos/database.png" alt="Icono de bases de datos" class="icon" loading="lazy">
-                <h3 id="bd-title">Bases de Datos</h3>
-                <p>Dominio de PostgreSQL y MySQL para diseño y optimización.</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 80%;"></div>
-                </div>
-            </div>
-            <div class="skill" role="region" aria-labelledby="web-title">
-                <img src="Fotos/web.png" alt="Icono de desarrollo web" class="icon" loading="lazy">
-                <h3 id="web-title">Desarrollo Web</h3>
-                <p>Conocimientos avanzados en HTML5, CSS3 y diseño responsivo.</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 70%;"></div>
-                </div>
-            </div>
-            <div class="skill" role="region" aria-labelledby="git-title">
-                <img src="Fotos/git.png" alt="Icono de control de versiones" class="icon" loading="lazy">
-                <h3 id="git-title">Control de Versiones</h3>
-                <p>Experto en Git para gestión de código y colaboración.</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 85%;"></div>
-                </div>
+<section id="habilidades">
+    <h2>Habilidades</h2>
+    <div class="skills">
+        <div class="skill">
+            <img src="Fotos/network.png" alt="Icono de sistemas y redes" title="Habilidades en Sistemas y Redes" class="icon" loading="lazy">
+            <h3>Sistemas y Redes</h3>
+            <p>Experto en servidores Linux y configuración de redes.</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
             </div>
         </div>
-    </section>
-
-    <section id="contacto" role="region" aria-labelledby="contacto-title">
-        <h2 id="contacto-title">Contacto</h2>
-        <form role="form">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-
-            <div style="text-align: center;">
-                <button type="submit">Enviar</button>
+        <div class="skill">
+            <img src="Fotos/database.png" alt="Icono de bases de datos" title="Habilidades en Bases de Datos" class="icon" loading="lazy">
+            <h3>Bases de Datos</h3>
+            <p>Dominio de PostgreSQL y MySQL para diseño y optimización.</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
             </div>
-        </form>
-    </section>
-</main>
+        </div>
+        <div class="skill">
+            <img src="Fotos/web.png" alt="Icono de desarrollo web" title="Habilidades en Desarrollo Web" class="icon" loading="lazy">
+            <h3>Desarrollo Web</h3>
+            <p>Conocimientos avanzados en HTML5, CSS3 y diseño responsivo.</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="Fotos/git.png" alt="Icono de control de versiones" title="Habilidades en Control de Versiones" class="icon" loading="lazy">
+            <h3>Control de Versiones</h3>
+            <p>Experto en Git para gestión de código y colaboración.</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 85%;"></div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<footer role="contentinfo">
-    <p>&copy; 2025 Portafolio</p>
+<section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <div style="text-align: center;">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Portafolio de José.</p>
 </footer>
 
 </body>
