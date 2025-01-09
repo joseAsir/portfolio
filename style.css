@@ -39,7 +39,7 @@ header nav ul li a:hover {
 
 .intro {
     text-align: center;
-    padding: 2rem 10rem;
+    padding: 2rem 10rem;  /* Ajuste en padding para pantallas grandes */
     background-color: #f9f9f9;
 }
 
@@ -101,6 +101,40 @@ section h2 {
     margin: 0 auto;
 }
 
+/* Adaptación de la intro para pantallas pequeñas */
+@media (max-width: 768px) {
+    .intro {
+        padding: 2rem 1rem; /* Reducir padding */
+    }
+
+    .intro h1 {
+        font-size: 1.8rem;  /* Reducir tamaño del título */
+        margin-bottom: 0.5rem;
+    }
+
+    .intro p {
+        font-size: 1.1rem;  /* Reducir tamaño del párrafo */
+    }
+
+    .intro img {
+        width: 120px;  /* Reducir tamaño de la imagen */
+        height: 120px;
+        margin-bottom: 1rem;
+    }
+
+    /* Alinear las redes sociales en fila */
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .social-links a {
+        padding: 0.4rem 0.8rem; /* Ajustar el tamaño de los botones */
+        font-size: 0.9rem;
+    }
+}
+
 /* Proyectos en cuadrícula */
 .projects-grid {
     display: grid;
@@ -109,6 +143,7 @@ section h2 {
     padding: 20px;
     justify-items: center; 
 }
+
 .project {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -162,7 +197,12 @@ section h2 {
 /* Adaptar los proyectos a pantallas pequeñas */
 @media (max-width: 768px) {
     .projects-grid {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr; /* Un proyecto por fila en móviles */
+    }
+
+    /* Hacer que los proyectos ocupen todo el ancho */
+    .project {
+        max-width: 100%;
     }
 }
 
@@ -214,9 +254,10 @@ section h2 {
 /* Adaptar las habilidades a pantallas pequeñas */
 @media (max-width: 768px) {
     .skill {
-        flex: 1 1 100%; 
+        flex: 1 1 100%; /* Una habilidad por fila en móviles */
     }
 }
+
 /* Formulario */
 form {
     max-width: 600px;
@@ -274,6 +315,7 @@ nav.fixed-menu {
     padding: 10px 0;
     z-index: 1000;
 }
+
 nav.fixed-menu ul {
     display: flex; 
     list-style: none;
